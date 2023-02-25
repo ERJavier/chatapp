@@ -1,11 +1,12 @@
 .formContainer {
-    background-color: aqua;
+    background-color:darkgreen ;
     height: 100vh;
+    display: flex;
     align-items: center;
     justify-content: center;
 
     .formWrapper {
-        background-color: antiquewhite;
+        background-color: whitesmoke;
         padding: 20px 60px;
         border-radius: 10px;
         display: flex;
@@ -14,27 +15,52 @@
         align-items: center;
 
         .logo{
-            color: black;
+            color: darkslategray;
             font-weight: bold;
             font-size: 24px;
         }
         .title {
-            color: aqua;
+            color: grey;
+            font-size: 12px;
         }
         form{
             display: flex;
             flex-direction: column;
-            gap: 15px
+            gap: 15px;
 
             input{
                 padding: 15px;
                 border: none;
                 width: 250px;
-                border-bottom: 1px solid rgb(0, 255, 255);
+                border-bottom: 1px solid rgba(0, 100, 0, 0.39);
             &::placeholder{
-                    color: grey;
+                    color: rgba(128, 128, 128, 0.297);
                 }
             }
+            button{
+                background-color: darkgreen;
+                color: whitesmoke;
+                font-weight: bold;
+                cursor: pointer;
+                border: none;
+            }
+            label{
+                display: flex;
+                align-items: center;
+                gap: 10px;
+                color:rgba(0, 100, 0, 0.39);
+                cursor: pointer;
+                font-size: 12px;
+
+                img{
+                    width: 32px;
+                }
+            }
+        }
+        p{
+            color:rgba(0, 100, 0, 0.39);
+            font-size: 12px;
+            margin-top: 10px;
         }
     }
 }
