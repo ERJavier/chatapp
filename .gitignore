@@ -29,3 +29,6 @@ yarn-error.log*
 
 # FIREBASE
 firebase.js
+database.rules.json
+firebase.json
+.firebaserc
