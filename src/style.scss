@@ -68,7 +68,7 @@
 }
 
 .home{
-    background-color: $gray-color;
+    background-color: $primary-color;
     height: 100vh;
     display: flex;
     align-items: center;
@@ -85,7 +85,7 @@
 
     .sidebar{
         flex:1;
-        background-color: $primary-color ;
+        background-color: $color-black ;
         
         .navbar{
             display: flex;
@@ -94,7 +94,7 @@
             height: 50px;
             padding: 10px;
             justify-content: space-between;
-            color: $primary-color;
+            color: $color-black;
         }
 
         .logo{
@@ -114,7 +114,7 @@
             }
 
             button{
-                background-color: $secondary-color;
+                background-color: $darkgray-color;
                 color: $primary-color;
                 font-size: 10px;
                 border: none ;
@@ -131,7 +131,7 @@
                 Input{
                     background-color: transparent;
                     border: none;
-                    color: $darkgray-color;
+                    color: $secondary-color;
                     outline: none;
 
                     &::placeholder{
@@ -166,7 +166,7 @@
                 }
                 p{
                     font-size: 14px;
-                    color: $primary-color;
+                    color: whitesmoke;
                 }
             }
         }
@@ -176,11 +176,84 @@
 
         .chatInfo{
             height: 50px;
-            background-color: $primary-color;
+            background-color: $darkgray-color;
             display: flex;
             align-items: center;
+            justify-content: space-between;
+            padding: 10px;
+            color: whitesmoke;
+        }
+        .chatIcons{
+            display: flex;
+            gap: 10px;
 
+            img{
+                height: 24px;
+                cursor: pointer;
+            }
+        }
 
+        .message{
+            display: flex;
+            gap: 20px;
+            margin-bottom: 20px;
+
+            .messageInfo{
+                display: flex;
+                flex-direction: column;
+                color: $darkgray-color;
+                font-weight: bold;
+
+                img{
+                    width: 40px;
+                    height: 40px;
+                    border-radius: 50%;
+                    object-fit: cover;
+                }
+            }
+            .messageContent{
+                img{
+                    width: 50%;
+                }
+            }
+        }
+        .input{
+            height: 50px;
+            background-color: whitesmoke;
+            padding: 10px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+
+            input{
+                width: 100%;
+                border: none;
+                outline: none;
+                color: $color-black;
+                font-size: 18px;
+
+                &::placeholder{
+                    color: $darkgray-color;
+                }
+            }
+
+            .send{
+                display: flex;
+                align-items: center;
+                gap: 10px;
+
+                img{
+                    height: 24px;
+                    cursor: pointer;
+                }
+                button{
+                    border: none;
+                    padding: 10px 15px;
+                    color: whitesmoke;
+                    background-color: $color-black;
+                    cursor: pointer;
+                }
+            }
         }
     }
 

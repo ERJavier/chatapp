@@ -2,6 +2,7 @@ import React from 'react'
 import Cam from '../images/cam.png'
 import Add from "../images/add.png";
 import More from "../images/more.png";
+import Input from './Input';
 
 
 
@@ -16,6 +17,7 @@ function Chat() {
           <img src={More} alt="" />
         </div>
       </div>
+      <Input />
     </div>
   )
 }
