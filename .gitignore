@@ -25,3 +25,7 @@ yarn-error.log*
 # IMAGES
 *.png
 *.jpg
+
+
+# FIREBASE
+firebase.js
