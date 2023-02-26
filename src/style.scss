@@ -68,14 +68,14 @@
 }
 
 .home{
-    background-color: $primary-color;
+    background-color: $gray-color;
     height: 100vh;
     display: flex;
     align-items: center;
     justify-content: center;
 
     .container{
-        border: 1px solid $color-white;
+        border: 1px solid $primary-color;
         border-radius: 10px;
         width: 65%;
         height: 80%;
@@ -85,7 +85,7 @@
 
     .sidebar{
         flex:1;
-        background-color: $background-color ;
+        background-color: $primary-color ;
         
         .navbar{
             display: flex;
@@ -106,7 +106,7 @@
             gap: 10px;
 
             img{
-                background-color: $color-white;
+                background-color: $primary-color;
                 height: 24px;
                 width: 24px;
                 border-radius: 50%;
@@ -114,13 +114,74 @@
             }
 
             button{
-                background-color: $color-white;
-                color: $background-color;
+                background-color: $secondary-color;
+                color: $primary-color;
                 font-size: 10px;
                 border: none ;
                 cursor: pointer;
             }
         }
+
+        .search{
+            border-bottom: 1px solid gray;
+
+            .searchForm{
+                padding: 10px;
+
+                Input{
+                    background-color: transparent;
+                    border: none;
+                    color: $darkgray-color;
+                    outline: none;
+
+                    &::placeholder{
+                        color: $primary-color;
+                    }
+                }
+            }
+        }
+
+        .userChat{
+            padding: 10px;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            cursor: pointer;
+            color: $secondary-color;
+
+            &:hover{
+                background-color: $darkgray-color ;
+            }
+            img{
+                width: 50px;
+                height: 50px;
+                border-radius: 50%;
+                object-fit: cover;
+            }
+
+            .userChatInfo{
+                span{
+                    font-size: 18px;
+                    font-weight: bold;
+                }
+                p{
+                    font-size: 14px;
+                    color: $primary-color;
+                }
+            }
+        }
     }
-    .chat{flex:2}
+    .chat{    
+        flex:2;
+
+        .chatInfo{
+            height: 50px;
+            background-color: $primary-color;
+            display: flex;
+            align-items: center;
+
+
+        }
+    }
+
 }
