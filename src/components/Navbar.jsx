@@ -2,8 +2,13 @@ import React from 'react'
 
 function Navbar() {
   return (
-    <div>
-      
+    <div className='navbar'>
+      <span className='logo'>Chat App</span>
+      <div className='user'>
+        <img src="" alt="" />
+        <span>Nombre</span>
+        <button>logout</button>
+      </div>
     </div>
   )
 }
